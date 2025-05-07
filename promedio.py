@@ -2,8 +2,13 @@ def promedio(numeros):
     suma = 0
     return sum(numeros) / len(numeros)
 
-num1 = int(input("Escribe un número: "))
-num2 = int(input("Escribe un número: "))
-num3 = int(input("Escribe un número: "))
+numeros = []
 
-print(f"El promedio es: {promedio([num1, num2, num3])}")
+num1 = int(input("Escribe un número: "))
+numeros.append(num1)
+num2 = int(input("Escribe un número: "))
+numeros.append(num2)
+num3 = int(input("Escribe un número: "))
+numeros.append(num3)
+
+print(f"El promedio es: {promedio(numeros)}")
